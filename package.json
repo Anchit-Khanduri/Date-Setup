@@ -13,7 +13,11 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "multer": "^2.0.1",
-    "nodemon": "^3.1.10",
-    "vercel": "^43.3.0"
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   }
 }
