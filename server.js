@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -6,6 +8,7 @@ let users = require('./USERS.json');
 
 const app = express();
 
+const PORT = process.env.PORT || 4000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -69,6 +72,6 @@ app.post('/api/users', upload.single('image'), (req, res) => {
 });
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("Server started");
 });
